@@ -3,9 +3,9 @@
 using namespace std;
 
 template <class T>                                          // Template Instantiation
-T Maximum(T No1, T No2, T No3)                                     // Function defination
+T Maximum(T No1, T No2, T No3)                              // Function defination
 {
-    if(No1 >= No2 && No1 >= No3)                                           // Business Logic
+    if(No1 >= No2 && No1 >= No3)                            // Business Logic
     {
         return No1;
     }

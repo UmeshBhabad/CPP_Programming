@@ -3,12 +3,12 @@
 using namespace std;
 
 template <class T>
-T Summation(T Arr[], int iSize)                 // Function defination
+T Summation(T Arr[], int iSize)                         // Function defination
 {
-    int iCnt = 0;                                   // Local Variables
+    int iCnt = 0;                                       // Local Variables
     T iSum;
 
-    for(iCnt = 1, iSum = Arr[0]; iCnt < iSize; iCnt++)             // Business Logic
+    for(iCnt = 1, iSum = Arr[0]; iCnt < iSize; iCnt++)  // Business Logic(initializaing the template variable)
     {
         iSum += Arr[iCnt];
     }
@@ -16,15 +16,15 @@ T Summation(T Arr[], int iSize)                 // Function defination
     return iSum;
 }
 
-int main()                                          // Main method
+int main()                                              // Main method
 {
-    float iRet = 0.0f;                                   // Local Variables
+    float iRet = 0.0f;                                  // Local Variables
 
-    float Brr[] = {10.1f,20.2f,30.3f,40.4f,50.5f};                   // Array declaration, Initialization
+    float Brr[] = {10.1f,20.2f,30.3f,40.4f,50.5f};      // Array declaration, Initialization
 
-    iRet = Summation(Brr, 5);                       // Function call
+    iRet = Summation(Brr, 5);                           // Function call
 
-    cout<< "Summation is : " << iRet << "\n";       // Display output
+    cout<< "Summation is : " << iRet << "\n";           // Display output
 
     return 0;
 }

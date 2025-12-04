@@ -1,3 +1,4 @@
+// Generic Programming
 
 #include <iostream>
 using namespace std;
@@ -5,9 +6,9 @@ using namespace std;
 template <class T>                      // Template Instantiation
 T Add(T No1, T No2)                     // Function defination
 {
-    T Ans;
+    T Ans;                              // Local Variable
 
-    Ans = No1 + No2;
+    Ans = No1 + No2;                    // Business Logic
 
     return Ans;
 }

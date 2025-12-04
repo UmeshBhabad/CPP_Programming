@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-float Summation(float Arr[], int iSize)                 // Function defination
+float Summation(float Arr[], int iSize)             // Function defination
 {
     int iCnt = 0;                                   // Local Variables
     float iSum = 0.0f;
@@ -17,9 +17,9 @@ float Summation(float Arr[], int iSize)                 // Function defination
 
 int main()                                          // Main method
 {
-    float iRet = 0.0f;                                   // Local Variables
+    float iRet = 0.0f;                              // Local Variables
 
-    float Brr[] = {10.1f,20.2f,30.3f,40.4f,50.5f};                   // Array declaration, Initialization
+    float Brr[] = {10.1f,20.2f,30.3f,40.4f,50.5f};  // Array declaration, Initialization
 
     iRet = Summation(Brr, 5);                       // Function call
 
