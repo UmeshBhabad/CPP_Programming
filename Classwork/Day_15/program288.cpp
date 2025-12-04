@@ -1,20 +1,22 @@
 #include <iostream>
 using namespace std;
 
-void auto_demo()
+void auto_demo()                            // Function defination
 {
-    auto int i = 1;
-    cout << "auto_demo : " << i << "\n";
+    auto i = 1;                             // Local Variable
+
+    cout << "auto_demo : " << i << "\n";    // Logic
     i++;
 
 }
 
 int main()
 {
-    auto_demo();
-    auto_demo();
-    auto_demo();
-    auto_demo();
+    // Function call
+    auto_demo();    // 1
+    auto_demo();    // 1
+    auto_demo();    // 1
+    auto_demo();    // 1
 
     return 0;
 }

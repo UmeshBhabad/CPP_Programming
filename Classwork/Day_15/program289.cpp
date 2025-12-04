@@ -1,33 +1,33 @@
 #include <iostream>
 using namespace std;
 
-void auto_demo()
+void auto_demo()                            // Function defination 
 {
-    auto int i = 1;
-    cout << "auto_demo : " << i << "\n";
-    i++;
+    auto i = 1;                             // Local Variable(auto storage class)
 
+    cout << "auto_demo : " << i << "\n";    // Logic
+    i++;
 }
 
-void static_demo()
+void static_demo()                          // Function defination
 {
-    static int i = 1;
-    cout << "static_demo : " << i << "\n";
-    i++;
+    static int i = 1;                       // Local Variable
 
+    cout << "static_demo : " << i << "\n";  // Logic
+    i++;
 }
 
-int main()
+int main()                                  // Main Method
 {
-    auto_demo();
-    auto_demo();
-    auto_demo();
-    auto_demo();
+    auto_demo();    // 1                    // Function call
+    auto_demo();    // 1
+    auto_demo();    // 1
+    auto_demo();    // 1
 
-    static_demo();
-    static_demo();
-    static_demo();
-    static_demo();
+    static_demo();  // 1                    // Function call
+    static_demo();  // 2
+    static_demo();  // 3
+    static_demo();  // 4
 
     return 0;
 }

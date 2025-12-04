@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
 
-void Display()
+void Display()                                  // Function defination
 {
-    int iCnt = 0;
+    int iCnt = 0;                               // Local Variable
 
     iCnt = 1;
-    while(iCnt <=4)
+    while(iCnt <=4)                             // Business Logic(while Loop)
     {
         cout << "Jay Ganesh...." << endl;
         iCnt++;
     }
 }
 
-int main()
+int main()                                      // Main Method
 {
-    Display();
+    Display();                                  // Function call
 
     return 0;
 }

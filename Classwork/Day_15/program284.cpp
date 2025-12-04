@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
 
-void Display()
+void Display()                          // Function defination
 {
-    cout << "Jay Ganesh...." << endl;
-    Display();
+    cout << "Jay Ganesh...." << endl;   // Business Logic
+
+    Display();                          // Recursive call
 }
 
-int main()
+int main()                              // Main Method
 {
-    Display();
+    Display();                          // Function call(infinite iteration)
 
     return 0;
 }

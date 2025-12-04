@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-void Display()
+void Display()                              // Function defination
 {
-    cout << "Jay Ganesh...." << "\n";
+    cout << "Jay Ganesh...." << "\n";       // Display Jay Ganesh....
     cout << "Jay Ganesh...." << "\n";
     cout << "Jay Ganesh...." << "\n";
     cout << "Jay Ganesh...." << "\n";
 }
 
-int main()
+int main()                                  // Main Method
 {
-    Display();
+    Display();                              // Function call
 
     return 0;
 }

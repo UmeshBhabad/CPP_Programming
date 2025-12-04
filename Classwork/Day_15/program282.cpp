@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 
-void Display()
+void Display()                                  // Function defination
 {
-    int iCnt = 0;
+    int iCnt = 0;                               // Local Variable
 
-    for(iCnt = 1; iCnt <= 4; iCnt++)
+    for(iCnt = 1; iCnt <= 4; iCnt++)            // Business logic(for loop)
     {
         cout << "Jay Ganesh...." << endl;
     }
 }
 
-int main()
+int main()                                      // Main method
 {
-    Display();
+    Display();                                  // Function call
 
     return 0;
 }

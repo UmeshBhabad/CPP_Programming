@@ -1,18 +1,19 @@
 #include <iostream>
 using namespace std;
 
-void Display()
+void Display()                                  // Function defnation
 {
-    int iCnt = 0;   // auto storage class
+    int iCnt = 0;   // auto storage class       // Local Variable
 
-    cout << "Jay Ganesh...." << iCnt << "\n";
+    cout << "Jay Ganesh...." << iCnt << "\n";   // Logic
     iCnt++;
-    Display();
+
+    Display();                                  // Recursive call
 }
 
-int main()
+int main()                                      // Main method
 {
-    Display();
+    Display();                                  // Function call(Infinite Iteration)
 
     return 0;
 }
