@@ -3,48 +3,56 @@
 #include <iostream>
 using namespace std;
 
-// Logic class
-template <class T>                          // Template Instantiation
-class Arithmetic                            // Class defination
+template <class T>
+class Arithmetic
 {
-    public:                                 // Local Variables
+    public:
         T No1;
         T No2;
 
-    Arithmetic(T A, T B)                    // Constructor
-    {
-        No1 = A;
-        No2 = B;
-    }
+        Arithmetic(T A, T B);
 
-    int Addition()                          // Function defination
-    {
-        T Ans = 0;                          // Local Variable
+        int Addition();
 
-        Ans = No1 + No2;                    // Business Logic
-
-        return Ans;
-    }
-
-    int Subtraction()                       // Function defination
-    {
-        T Ans = 0;                          // Local Variables
-
-        Ans = No1 - No2;                    // Business Logic
-
-        return Ans;
-    }
+        int Subtraction();
 };
 
-int main()                                  // Main method
+template <class T>
+Arithmetic<T> :: Arithmetic(T A, T B)
 {
-    Arithmetic <int> aobj1(11,10);          // Object Instantiation(with type parameter int)
-    Arithmetic <double> aobj2(101.5,50.3);  // Object Instantiation(with type parameter double)
+    No1 = A;
+    No2 = B;
+}
 
-    cout << aobj1.Addition()<< "\n";        // Function call
+template <class T>
+int Arithmetic<T> :: Addition()                 // Function defination
+{
+    T Ans = 0;                                   // Local Variables
+
+    Ans = No1 + No2;
+
+    return Ans;
+}
+
+template <class T>
+int Arithmetic<T> :: Subtraction()                 // Function defination
+{
+    T Ans = 0;                                   // Local Variables
+
+    Ans = No1 - No2;
+
+    return Ans;
+}
+
+int main()                                          // Main method
+{
+    Arithmetic <int> aobj1(11,10);                    // Object Instantiation
+    Arithmetic <double> aobj2(101.5,50.3);
+
+    cout << aobj1.Addition()<< "\n";
     cout<< aobj1.Subtraction()<<"\n";
 
-    cout << aobj2.Addition()<< "\n";        // Function call
+    cout << aobj2.Addition()<< "\n";
     cout<< aobj2.Subtraction()<<"\n";
 
     return 0;
